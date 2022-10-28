@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Audio samples from "Synthetic Data is All You Need? Towards Universal Neural Vocoding"</title>
+    <title>Audio samples from "A Synthetic Corpus Generation Method for Neural Vocoder Training"</title>
     <meta charset="UTF-8">
-    <title>Synthetic Data is All You Need? Towards Universal Neural Vocoding</title>
+    <title>A Synthetic Corpus Generation Method for Neural Vocoder Training</title>
     <style>
         red {color: red}
         audio {width: 250px}
@@ -13,7 +13,7 @@
   <body>
     <article>
       <header>
-        <h1>Audio samples from "Synthetic Data is All You Need? Towards Universal Neural Vocoding"</h1>
+        <h1>Audio samples from "A Synthetic Corpus Generation Method for Neural Vocoder Training"</h1>
       </header>
     </article>
 
@@ -22,18 +22,18 @@
 
     <div>
       <b>Abstract:</b>
-      A very intuitive idea to construct a universal vocoder is covering all possible human voices in a training database.
-      Unfortunately, it is impossible in practice owing to the massive human and material resources involved and the copyright issues.
-      In this work, we propose a novel and effective paradigm for training the universal vocoder with synthetic data alone, which is easily available in bulk.
-      Our goal is to make the synthetic data distribution approximate the real vocal data distribution by enumerating synthetic audios with possible human voice forms.
-      By this means, the universal vocoder can cope with many human voice synthesis scenarios including speech, singing voice, etc.
-      To evaluate the universality of the vocoder trained with synthetic data, which is referred to as synthcoder in this paper, we performed experiments on both speech and singing utterances in subjective and objective metrics.
-      The experimental results show that, as a method that does not require human audio corpus for training, synthcoder can achieve competitive results, which demonstrates the huge potential of our proposed method.
+      Nowadays, neural vocoders are preferred for their ability to synthesize high-fidelity audio.
+      However, training a neural vocoder requires a massive corpus of high-quality real audio, and the audio recording process is often labor-intensive.
+      In this work, we propose a synthetic corpus generation method for neural vocoder training, which can easily generate synthetic audio with an unlimited number at nearly no cost.
+      We explicitly model the prior characteristics of audio from multiple target domains simultaneously (e.g., speeches, singing voices, and instrumental pieces) to equip the generated audio data with these characteristics.
+      And we show that our synthetic corpus allows the neural vocoder to achieve competitive results without any real audio in the training process.
+      To validate the effectiveness of our proposed method, we performed empirical experiments on both speech and music utterances in subjective and objective metrics.
+      The experimental results show that the neural vocoder trained with the synthetic corpus produced by our method can generalize to multiple target scenarios and has excellent singing voice (MOS: 4.20) and instrumental piece (MOS: 4.00) synthesis results.
     <p></p>
     </div>
 
     <!-- <p>For more details of our work, please refer to the <a href="https://arxiv.org/abs/2010.05646">paper</a>.<br/> -->
-    Our implementation is available in the <a href="https://github.com/zerlinwang/synthcoder">github repository</a>.<br/><br/>
+    Our implementation is available in the <a href="https://github.com/zerlinwang/synthetic-corpus-vocoder">github repository</a>.<br/><br/>
     </p>
 
 
@@ -57,7 +57,9 @@
           <div class="caption" style="max-width: 1000px;">
             <p>
               <i>
-              The pipeline of our proposed paradigm for universal vocoding.
+                The pipeline of our proposed method. 
+                At first, based on the prior knowledge from different target audio domains, we model the distributions of acoustic features.
+                Then we sample the acoustic features, including fundamental frequency $f_0$, harmonic amplitude $A$, harmonic distribution $D$, and time-varying filtered noise signal $N$ from corresponding distributions, respectively.
               </i>
             </p>
           </div>
@@ -84,7 +86,7 @@
     </div>
     <br><br>
     <div>
-      <a name="sv"><h2>Singing Voice</h2></a>
+      <a name="sv"><h2>Singing Voices</h2></a>
       "Neural Vocoder (lj)" denotes the vocoder trained with LJSpeech and "Synthcoder (ours)" dentes the vocoder trained with synthetic data.
       <hr>
       <table>
