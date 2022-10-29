@@ -40,11 +40,11 @@
     <p class="toc_title">Contents</p>
     <div id="toc_container">
     <ul>
-      <li><a href="#sd">Synthetic Dataset</a></li>
-      <li><a href="#sv">Singing Voice</a></li>
-      <li><a href="#mp">Musical Piece</a></li>
-      <li><a href="#fs">Female Speech</a></li>
-      <li><a href="#ms">Male Speech</a></li>
+      <li><a href="#sd">Synthetic Corpus</a></li>
+      <li><a href="#sv">Singing Voices</a></li>
+      <li><a href="#mp">Instrumental Pieces</a></li>
+      <li><a href="#fs">Female Speeches</a></li>
+      <li><a href="#ms">Male Speeches</a></li>
     </ul>
     </div>
 
@@ -87,7 +87,7 @@
     <br><br>
     <div>
       <a name="sv"><h2>Singing Voices</h2></a>
-      "Neural Vocoder (lj)" denotes the vocoder trained with LJSpeech and "Synthcoder (ours)" dentes the vocoder trained with synthetic data.
+      ``Neural Vocoder (Real)" denotes the vocoder trained with real corpus LJSpeech. ``Neural Vocoder (10K)" denotes the vocoder trained with 10,000 pieces of synthetic audio and ``Neural Vocoder (1M)" denotes the vocoder trained with 1,000,000 pieces of synthetic audio.
       <hr>
       <table>
         <tbody>
@@ -108,15 +108,23 @@
           <td><audio controls="" preload="none"><source src="samples/sv/GL/sv_gl_5.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap>Neural Vocoder (lj)
+          <td nowrap>Neural Vocoder (Real)
           <td><audio controls="" preload="none"><source src="samples/sv/NV/sv_nv_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/sv/NV/sv_nv_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/sv/NV/sv_nv_3.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/sv/NV/sv_nv_4.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/sv/NV/sv_nv_5.wav"></audio></td>
         </tr>
+        <tr>1w
+          <td nowrap>Neural Vocoder (10K)
+          <td><audio controls="" preload="none"><source src="samples/sv/SC1W/sv_sc1w_1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/sv/SC1W/sv_sc1w_2.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/sv/SC1W/sv_sc1w_3.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/sv/SC1W/sv_sc1w_4.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/sv/SC1W/sv_sc1w_5.wav"></audio></td>
+        </tr>
         <tr>
-          <td nowrap>Synthcoder (ours)
+          <td nowrap>Neural Vocoder (1M)
           <td><audio controls="" preload="none"><source src="samples/sv/SC/sv_sc_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/sv/SC/sv_sc_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/sv/SC/sv_sc_3.wav"></audio></td>
@@ -128,14 +136,14 @@
     </div>
     <br><br>
     <div>
-      <a name="mp"><h2>Musical Piece</h2></a>
-      "Neural Vocoder (lj)" denotes the vocoder trained with LJSpeech and "Synthcoder (ours)" dentes the vocoder trained with synthetic data.
+      <a name="mp"><h2>Instruental Pieces</h2></a>
+      ``Neural Vocoder (Real)" denotes the vocoder trained with real corpus LJSpeech. ``Neural Vocoder (10K)" denotes the vocoder trained with 10,000 pieces of synthetic audio and ``Neural Vocoder (1M)" denotes the vocoder trained with 1,000,000 pieces of synthetic audio.
       <hr>
       <table>
         <tbody>
         <tr>
           <td nowrap width="160">Ground Truth</td>
-          <td><audio controls="" preload="none"><source src="samples/mp/GT/mp_gt_1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/mp/GT1W/mp_gt_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/mp/GT/mp_gt_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/mp/GT/mp_gt_3.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/mp/GT/mp_gt_4.wav"></audio></td>
@@ -150,7 +158,7 @@
           <td><audio controls="" preload="none"><source src="samples/mp/GL/mp_gl_5.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap>Neural Vocoder (lj)
+          <td nowrap>Neural Vocoder (Real)
           <td><audio controls="" preload="none"><source src="samples/mp/NV/mp_nv_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/mp/NV/mp_nv_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/mp/NV/mp_nv_3.wav"></audio></td>
@@ -158,7 +166,15 @@
           <td><audio controls="" preload="none"><source src="samples/mp/NV/mp_nv_5.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap>Synthcoder (ours)
+          <td nowrap>Neural Vocoder (10K)
+          <td><audio controls="" preload="none"><source src="samples/mp/SC1W/mp_sc1w_1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/mp/SC1W/mp_sc1w_2.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/mp/SC1W/mp_sc1w_3.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/mp/SC1W/mp_sc1w_4.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/mp/SC1W/mp_sc1w_5.wav"></audio></td>
+        </tr>
+        <tr>
+          <td nowrap>Neural Vocoder (1M)
           <td><audio controls="" preload="none"><source src="samples/mp/SC/mp_sc_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/mp/SC/mp_sc_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/mp/SC/mp_sc_3.wav"></audio></td>
@@ -170,8 +186,8 @@
     </div>
     <br><br>
     <div>
-      <a name="fs"><h2>Female Speech</h2></a>
-      "Neural Vocoder (lj)" denotes the vocoder trained with LJSpeech and "Synthcoder (ours)" dentes the vocoder trained with synthetic data.
+      <a name="fs"><h2>Female Speeches</h2></a>
+      ``Neural Vocoder (Real)" denotes the vocoder trained with real corpus LJSpeech. ``Neural Vocoder (10K)" denotes the vocoder trained with 10,000 pieces of synthetic audio and ``Neural Vocoder (1M)" denotes the vocoder trained with 1,000,000 pieces of synthetic audio.
       <hr>
       <table>
         <tbody>
@@ -192,7 +208,7 @@
           <td><audio controls="" preload="none"><source src="samples/fs/GL/fs_gl_5.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap>Neural Vocoder (lj)
+          <td nowrap>Neural Vocoder (Real)
           <td><audio controls="" preload="none"><source src="samples/fs/NV/fs_nv_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/fs/NV/fs_nv_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/fs/NV/fs_nv_3.wav"></audio></td>
@@ -200,7 +216,15 @@
           <td><audio controls="" preload="none"><source src="samples/fs/NV/fs_nv_5.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap>Synthcoder (ours)
+          <td nowrap>Neural Vocoder (10K)
+          <td><audio controls="" preload="none"><source src="samples/fs/SC1W/fs_sc1w_1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/fs/SC1W/fs_sc1w_2.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/fs/SC1W/fs_sc1w_3.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/fs/SC1W/fs_sc1w_4.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/fs/1WSC1W/fs_sc1w_5.wav"></audio></td>
+        </tr>
+        <tr>
+          <td nowrap>Neural Vocoder (1M)
           <td><audio controls="" preload="none"><source src="samples/fs/SC/fs_sc_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/fs/SC/fs_sc_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/fs/SC/fs_sc_3.wav"></audio></td>
@@ -212,8 +236,8 @@
     </div>
     <br><br>
     <div>
-      <a name="ms"><h2>Male Speech</h2></a>
-      "Neural Vocoder (lj)" denotes the vocoder trained with LJSpeech and "Synthcoder (ours)" dentes the vocoder trained with synthetic data.
+      <a name="ms"><h2>Male Speeches</h2></a>
+      ``Neural Vocoder (Real)" denotes the vocoder trained with real corpus LJSpeech. ``Neural Vocoder (10K)" denotes the vocoder trained with 10,000 pieces of synthetic audio and ``Neural Vocoder (1M)" denotes the vocoder trained with 1,000,000 pieces of synthetic audio.
       <hr>
       <table>
         <tbody>
@@ -234,7 +258,7 @@
           <td><audio controls="" preload="none"><source src="samples/ms/GL/ms_gl_5.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap>Neural Vocoder (lj)
+          <td nowrap>Neural Vocoder (Real)
           <td><audio controls="" preload="none"><source src="samples/ms/NV/ms_nv_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/ms/NV/ms_nv_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/ms/NV/ms_nv_3.wav"></audio></td>
@@ -242,7 +266,15 @@
           <td><audio controls="" preload="none"><source src="samples/ms/NV/ms_nv_5.wav"></audio></td>
         </tr>
         <tr>
-          <td nowrap>Synthcoder (ours)
+          <td nowrap>Neural Vocoder (10K)
+          <td><audio controls="" preload="none"><source src="samples/ms/SC1W/ms_sc1w_1.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/ms/SC1W/ms_sc1w_2.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/ms/SC1W/ms_sc1w_3.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/ms/SC1W/ms_sc1w_4.wav"></audio></td>
+          <td><audio controls="" preload="none"><source src="samples/ms/SC1W/ms_sc1w_5.wav"></audio></td>
+        </tr>
+        <tr>
+          <td nowrap>Neural Vocoder (1M)
           <td><audio controls="" preload="none"><source src="samples/ms/SC/ms_sc_1.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/ms/SC/ms_sc_2.wav"></audio></td>
           <td><audio controls="" preload="none"><source src="samples/ms/SC/ms_sc_3.wav"></audio></td>
