@@ -6,7 +6,6 @@ from pathlib import Path
 from bounded_pool_executor import BoundedProcessPoolExecutor
 
 
-
 class Synthesizer(object):
     def __init__(self, n_samples, sample_rate):
         self.sinusoidal_synth = ddsp.synths.Sinusoidal(

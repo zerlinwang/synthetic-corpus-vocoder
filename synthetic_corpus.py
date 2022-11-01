@@ -1,3 +1,5 @@
+'''The code is adapted from https://github.com/magenta/ddsp/blob/main/ddsp/training/data_preparation/synthetic_data.py
+'''
 # Copyright 2021 The DDSP Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");

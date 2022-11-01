@@ -1,5 +1,3 @@
-tensorflow
 ddsp
-scipy
 bounded_pool_executor
 soundfile
